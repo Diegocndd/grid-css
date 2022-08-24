@@ -1,0 +1,23 @@
+.container-medium {
+    display: none;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: calc(20vh - 1rem - 0.3rem * 2) calc(80vh - 1rem - 0.3rem) calc(60vh - 0.3rem) calc(30vh);
+    grid-template-areas: "h m m" "hero hero hero" "c c s" "f f f";
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .container-medium {
+        grid-template-columns: 1fr;
+        grid-template-rows: calc(20vh - 1rem - 0.3rem * 2) calc(10vh - 1rem - 0.3rem) calc(60vh - 0.3rem) calc(40vh) calc(20vh) calc(10vh);
+        grid-template-areas: "h" "m" "hero" "c" "s" "f";
+    }
+}
+
+.menu-tab {
+    grid-area: m;
+}
+
+.hero {
+    grid-area: hero;
+}

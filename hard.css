@@ -1,0 +1,59 @@
+.container-hard {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: calc(24vh - 1rem - 0.3rem * 2) calc(24vh - 1rem - 0.3rem) calc(24vh - 0.3rem) calc(24vh - 0.3rem);
+    grid-template-areas: "b1 . . b5" ". b2 . ." ". . b3 ." ". b6 . b4";
+    gap: 1rem;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: var(--box-color);
+    color: var(--font-color);
+
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.26); 
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.26);
+
+    border-radius: 1rem;
+    user-select: none;
+}
+
+.empty-block {
+    background-color: var(--empty-block);
+
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.26); 
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.26);
+
+    border-radius: 1rem;
+}
+
+.b1 {
+    grid-area: b1;
+}
+
+.b2 {
+    grid-area: b2;
+}
+
+.b3 {
+    grid-area: b3;
+}
+
+.b4 {
+    grid-area: b4;
+}
+
+.b5 {
+    grid-area: b5;
+}
+
+.b6 {
+    grid-area: b6;
+}
+
+.empty-block {
+    grid-area: eb;
+}
